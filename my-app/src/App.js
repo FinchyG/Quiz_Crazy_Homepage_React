@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
+import { Title_Header } from './Title_Header';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="wide_section">
-          <h1 className="App-title">Quiz Crazy</h1>
-        </div>
+        <Title_Header />
       </div>
     );
   }
