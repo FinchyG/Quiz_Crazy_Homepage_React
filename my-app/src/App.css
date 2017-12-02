@@ -1,8 +1,9 @@
 body {
   background-color: #661212;
+  font-family: print_clearlyregular;
 }
 
-.wide_section {
+.Title_Header {
   width: 75%;
   margin: 3% auto;
   background-color: #d4c98c;
@@ -12,6 +13,29 @@ body {
   border-left: 0.1em solid #000000;
 }
 
+.Left_Section {
+  position: relative;
+  display: inline-block;
+  width: 35%;
+  background-color: #d4c98c;
+  padding-bottom: 1em;
+  border-right: 0.5em solid #000000;
+  border-bottom: 0.5em solid #000000;
+  margin: 3% 10% 3%;
+  text-align: center;
+}
+
+.Right_Section {
+  position: relative;
+  display: inline-block;
+  width: 35%;
+  background-color: #d4c98c;
+  padding-bottom: 1em;
+  border-right: 0.5em solid #000000;
+  border-bottom: 0.5em solid #000000;
+  text-align: center;
+}
+
 h1 {
   font-size: 5em;
   text-shadow: .05em .05em #999999;
@@ -19,10 +43,30 @@ h1 {
   font-family: roman_sdregular;
 }
 
+h4 {
+  font-size: 2em;
+  text-decoration: underline;
+  margin-bottom: -0.2em;
+  text-shadow: .05em .05em #999999;
+  font-family: roman_sdregular;
+}
+
+p {
+  margin-bottom: 0.2em;
+}
+
 @font-face {
   font-family: 'roman_sdregular';
   src: url('/fonts/roman_sd-webfont.woff2') format('woff2'),
        url('/fonts/roman_sd-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'print_clearlyregular';
+  src: url('/fonts/print_clearly-webfont.woff2') format('woff2'),
+       url('/fonts/print_clearly-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
