@@ -1,12 +1,14 @@
 body {
-  background-color: #661212;
+  background-image: url('./mahogany.png');
+  background-repeat: repeat;
   font-family: print_clearlyregular;
 }
 
 .Title_Header {
   width: 75%;
   margin: 3% auto;
-  background-color: #d4c98c;
+  background-image: url('./paper.jpg');
+  background-repeat: repeat;
   border-top: 0.1em solid #000000;
   border-right: 0.5em solid #000000;
   border-bottom: 0.5em solid #000000;
@@ -17,7 +19,8 @@ body {
   position: relative;
   display: inline-block;
   width: 35%;
-  background-color: #d4c98c;
+  background-image: url('./paper.jpg');
+  background-repeat: repeat;
   padding-bottom: 1em;
   border-right: 0.5em solid #000000;
   border-bottom: 0.5em solid #000000;
@@ -29,11 +32,20 @@ body {
   position: relative;
   display: inline-block;
   width: 35%;
-  background-color: #d4c98c;
+  background-image: url('./paper.jpg');
+  background-repeat: repeat;
   padding-bottom: 1em;
   border-right: 0.5em solid #000000;
   border-bottom: 0.5em solid #000000;
   text-align: center;
+}
+
+.slider {
+  width: 4.5em;
+  height: 4.5em;
+  position: relative;
+
+  animation: image_slide 4s infinite alternate;
 }
 
 h1 {
@@ -69,4 +81,9 @@ p {
        url('/fonts/print_clearly-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+@keyframes image_slide {
+  0% {left: 23%;}
+  100% {left: 70%;}
 }
